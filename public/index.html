@@ -11,77 +11,75 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./output.css" />
         <title>iFew|Home</title>
     </head>
-    <body>
-        <div>
-            <!-- content wrapper -->
-            <div>
-                <nav>
-                    <div>
+    <body class="bg-gray-900">
+        <header>
+            <nav class="texr-xs flex flex-row text-center justify-between bg-white">
+                <!-- content wrapper -->
+                <div>
+                    <div class="flex flex-row">
                         <a href="/public/index.html">
-                            <img src="/public/images/logo.png" alt="green ifew logo"
+                            <img
+                                src="/public/images/logo.png"
+                                alt="green ifew logo"
+                                class="w-15 h-12 m-2"
                         /></a>
                     </div>
-                </nav>
-            </div>
-            <ul>
-                <li>
-                    <a href="#">
-                        <span>HOME</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>PROFILE</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                </div>
+
+                <div class="text-white-700 mr-5">
+                    <ul class="flex flex-row items-center justify-center h-full gap-4">
+                        <li class="text-gray-600 hover:bg-green-500 p-1">
+                            <a id="login-button" href="./login.html">
+                                <span class="p-2">LOG IN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
         <!-- end nav -->
 
-        <main>
-            <div>
-                <a href="#">LOG IN</a>
-                <a href="#">SIGN UP</a>
-            </div>
-
-            <header>
-                <img src="/public/images/logo.png" alt="green ifew logo" />
-                <input type="text" placeholder="Search" />
-                <di>
-                    <button>SEARCH</button>
-                </di>
-            </header>
-
-            <div>
-                <h4>Latest Post</h4>
-                <div>
-                    <img src="/public/images/javascript.png" alt="js" />
-                    <a href="#">JAVASCRIPT</a>
+        <section>
+            <div class="flex flex-col gap-8 mt-8 mx-4">
+                <div class="justify-center flex content-center">
+                    <img class="w-58 h-38" src="/public/images/logo.png" alt="green ifew logo" />
+                </div>
+                <div class="justify-center flex content-center border-green-500">
+                    <input
+                        id="search-box"
+                        class="border-green-600 w-full max-w-md h-10 p-2"
+                        type="text"
+                        placeholder="Search"
+                    />
                 </div>
 
-                <div>
-                    <img src="/public/images/programming.png" alt="man in tech" />
-                    <a href="#">PROGRAMMING</a>
-                </div>
-
-                <div>
-                    <img src="/public/images/htmlcss.png" alt="htmlcss pc" />
-                    <a href="#">HTML AND CSS</a>
+                <div class="justify-center flex content-center">
+                    <button
+                        id="btn-search"
+                        type="button"
+                        class="rounded-sm !bg-white py-2 px-4 hover:!bg-green-600"
+                    >
+                        SEARCH
+                    </button>
                 </div>
             </div>
+        </section>
 
-            <div>
-                <img src="/public/images/frontend.png" alt="front-end tag name" />
-                <a href="#">FRONT-END WEB DEVELOPMENT</a>
-            </div>
-
-            <div><a href="#">View More</a></div>
+        <main class="text-white m-10 p-10" id="hello">
+            <div
+                id="post-grid"
+                class="box-border h-30 w-25 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 justify-center m-10"
+            ></div>
         </main>
-        <footer>
-            <span>Copyright 2023 Cristina Syversen Inc.</span>
+
+        <footer class="flex bg-white justify-center py-3 mt-5">
+            <span class="text-center">Copyright 2023 Cristina Syversen Inc.</span>
         </footer>
+
+        <script src="./js/home.js" type="module"></script>
     </body>
 </html>

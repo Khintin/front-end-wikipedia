@@ -73,9 +73,9 @@
                 </div>
             </section>
 
-            <div class="md:grid grid-cols-2 my-10">
+            <div class="grid grid-cols-2 my-10">
                 <div>
-                    <h1 id="post-title" class="text-4xl font-bold text-start pl-16">JAVASCRIPT</h1>
+                    <h1 class="text-4xl font-bold text-start pl-16">JAVASCRIPT</h1>
                     <ul class="pl-16 pt-16">
                         <li>
                             <svg
@@ -172,17 +172,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="pl-14 pt-10 rounded content-center">
+                <div class="rounded content-center">
                     <img
-                        id="post-image"
                         src="/public/images/javascript.png"
                         alt="js"
                         class="w-25 h-38 object-contain"
                     />
                 </div>
             </div>
-
-            <div id="post-body" class="p-14">
+            <div class="p-14 bg-white m-10 rounded">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, architecto
                     amet! Nesciunt, officiis obcaecati a voluptatem voluptates culpa distinctio.
@@ -204,14 +202,20 @@
                 </p>
             </div>
 
-            <div class="flex text-green-600 justify-end pr-14">
-                <a href="#">Back to top</a>
-            </div>
+            <!-- Submit button -->
+            <div class="justify-end flex content-center mt-5 p-14">
+                <button
+                    type="button"
+                    class="rounded-sm !bg-white py-2 px-4 hover:!bg-green-500"
+                >
+                    SUBMIT
+                </button>
+           
         </main>
         <footer class="flex bg-white justify-center py-3">
             <span class="text-center">Copyright 2023 Cristina Syversen Inc.</span>
         </footer>
 
-        <script src="./js/post.js" type="module"></script>
+        <script src="./js/edit.js" type="module"></script>
     </body>
 </html>

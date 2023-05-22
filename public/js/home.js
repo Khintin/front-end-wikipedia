@@ -1,5 +1,9 @@
 import { getPosts } from "./api/posts.js";
 import { initNavigation } from "./navigation.js";
+import { createAlert } from "./utils.js";
+
+const params = new URLSearchParams(document.location.search);
+const action = params.get("action");
 
 const searchBox = document.querySelector("#search-box");
 const btnSearch = document.querySelector("#btn-search");
@@ -20,7 +24,12 @@ btnSearch.addEventListener("click", (event) => {
     }
 
     search(searchBox.value);
-})
+});
+
+if (action && action == "deleted") {
+    const container = document.querySelector("main");
+    createAlert("success", "The post was deleted", container, false);
+}
 
 getPosts().then(allPosts => {
     posts.push(...allPosts);

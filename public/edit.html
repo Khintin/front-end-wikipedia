@@ -42,169 +42,35 @@
         </header>
 
         <!-- end nav -->
-        <main class="bg-gray-300 mx-16">
-            <section class="inline-block">
-                <div class="justify-start flex content-center border-green-600 p-10">
-                    <input
-                        class="border-green-600 w-full max-w-md h-10 p-2"
-                        type="text"
-                        placeholder="Search"
-                    />
-                    <button
-                        type="button"
-                        class="rounded-sm !bg-white py-2 px-4 hover:!bg-green-500"
-                    >
-                        <svg
-                            class="w-5"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="w-6 h-6"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                            />
-                        </svg>
-                    </button>
-                </div>
-            </section>
+        <main class="flex flex-col bg-gray-300 mx-16 p-6 gap-6">          
 
-            <div class="grid grid-cols-2 my-10">
+            <div class="flex flex-col items-start gap-4">
                 <div>
-                    <h1 class="text-4xl font-bold text-start pl-16">JAVASCRIPT</h1>
-                    <ul class="pl-16 pt-16">
-                        <li>
-                            <svg
-                                class="w-5 text-green-600 inline-block"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
-                                />
-                            </svg>
-                            <a href="">Share</a>
-                        </li>
-                        <li>
-                            <svg
-                                class="w-5 text-green-600 inline-block"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
-                                />
-                            </svg>
-                            <a href="">Edit</a>
-                        </li>
-                        <li>
-                            <svg
-                                class="w-5 text-green-600 inline-block"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"
-                                />
-                            </svg>
-
-                            <a href="">Bookmark</a>
-                        </li>
-                        <li>
-                            <svg
-                                class="w-5 text-green-600 inline-block"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-                                />
-                            </svg>
-
-                            <a href="">Download</a>
-                        </li>
-                        <li>
-                            <svg
-                                class="w-5 text-green-600 inline-block"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
-                                />
-                            </svg>
-
-                            <a href="">Delete</a>
-                        </li>
-                    </ul>
+                    <label class="mb-2 font-medium text-lg">Post title:</label>
+                    <input id="post-title" class="text-2xl p-2 text-start" />
                 </div>
+
+                <div>
+                    <label class="mb-2 font-medium text-lg">Post image:</label>
                 <div class="rounded content-center">
                     <img
+                    id="post-image"
                         src="/public/images/javascript.png"
                         alt="js"
                         class="w-25 h-38 object-contain"
                     />
                 </div>
             </div>
-            <div class="p-14 bg-white m-10 rounded">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, architecto
-                    amet! Nesciunt, officiis obcaecati a voluptatem voluptates culpa distinctio.
-                    Nulla, <a href="#">dolores non dolorem.</a> aliquam. Impedit accusantium
-                    eligendi est iste in culpa modi sapiente.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eveniet fugit
-                    nulla, atque enim quo ipsam obcaecati ducimus cupiditate dicta quibusdam neque
-                    sunt, <a href="#">dolores non dolorem.</a> Itaque expedita quos amet.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repudiandae
-                    architecto cumque est explicabo minus earum optio eaque nesciunt. Voluptate vel,
-                    cupiditate et aperiam mollitia modi obcaecati molestiae impedit accusamus.
-                    <a href="#">dolores non dolorem.</a>
-                </p>
             </div>
+            <div>
+            <label class="mb-2 font-medium text-lg">Post content:</label>
+            <textarea rows="15" class="block box-border w-full p-6 bg-white rounded" id="post-body"></textarea> 
+        </div>
 
             <!-- Submit button -->
-            <div class="justify-end flex content-center mt-5 p-14">
+            <div class="justify-end flex content-center">
                 <button
+                id="submit-button"
                     type="button"
                     class="rounded-sm !bg-white py-2 px-4 hover:!bg-green-500"
                 >

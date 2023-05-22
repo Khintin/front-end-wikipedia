@@ -10,7 +10,7 @@ export function initNavigation() {
         btnLogin.innerText = "LOG OUT";
 
         navList.innerHTML += `<li class="font-medium text-gray-600 hover:bg-green-500 p-1 mr-2">
-                            <a href="./edit.html">
+                            <a href="./edit.html?action=new">
                                 <span>CREATE</span>
                             </a>
                         </li>`;
